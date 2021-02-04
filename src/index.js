@@ -1,15 +1,17 @@
 import Button from './components/Button'
 import Header from './components/Header'
 import Card from './components/Card'
+import createElement from './lib/createElement'
 
-console.log('hello world')
+const grid = createElement(
+  'div',
+  {
+    className: 'appGrid',
+  },
+  Header('Yes!', 'just some text'),
+  Button('Click me'),
+  Button('Click this!'),
+  Card('Question?', 'Answer!')
+)
 
-const header = Header('Yes!', 'just some text')
-const button = Button('Click me')
-const button1 = Button('Click this!')
-const card = Card('Question?', 'Answer!')
-
-document.body.append(header)
-document.body.append(button)
-document.body.append(button1)
-document.body.append(card)
+document.body.append(grid)

@@ -3,17 +3,23 @@ import createElement from '../lib/createElement'
 import Button from './Button'
 
 export default function Card(question, answer) {
-  const el = createElement('section', { className: 'Card' })
+  // function for card-create
+  const questionEl = createElement('h2', { innerText: question }) // create h2 for card
+  const buttonEl = Button('Show answer') // import Button-function ('SOMETEXT in here')
+  const answerEl = createElement('p', { hidden: true, innerText: answer }) // create answer for card
 
-  const questionEl = createElement('h2', { innerText: question })
-  const button = Button('Show answer')
-  const answerEl = createElement('p', { hidden: true, innerText: answer })
-
-  button.addEventListener('click', () => {
-    answerEl.hidden = !answerEl.hidden
+  buttonEl.addEventListener('click', () => {
+    answerEl.hidden = !answerEl.hidden // click = hidden? do not hidden! click2 = not hidden? do hidden
   })
 
-  el.append(questionEl, button, answerEl)
+  // create ( type, props, ...children)
+  const el = createElement(
+    'section', // type
+    { className: 'Card' }, // props
+    questionEl, // ...children
+    buttonEl, // ...children
+    answerEl // ...children
+  )
 
   return el
 }
