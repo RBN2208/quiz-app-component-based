@@ -1,11 +1,12 @@
 :root {
-  --color-primary: #1b8ef2;
-  --color-secondary: #5cc8f2;
-  --color-lighter-sec: #acf2f2;
-  --color-highlight: #9b45bf;
-  --color-fun: #f2e205;
+  --color-primary: #1f827e;
+  --color-secondary: #f4e3c9;
+  --color-third: #484aa6;
+  --color-highlight: #20dcd6;
+  --color-fun: #5ca1f2;
   --text-white: #fff;
   --grey-shadow: #40403f;
+  --text-dark: #40403f;
   --background-gradient: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 
