@@ -1,14 +1,14 @@
 .header {
   text-align: center;
-  border: 1px solid cornflowerblue;
+  border: 1px solid var(--color-primary);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   overflow: hidden;
 }
 
 .header__title {
-  background-color: cornflowerblue;
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--text-white);
   padding-top: 8px;
   margin: 0;
 }
@@ -16,7 +16,7 @@
 .header__subtitle {
   display: block;
   font-size: 50%;
-  background-color: white;
-  color: cornflowerblue;
+  background-color: var(--text-white);
+  color: var(--color-primary);
   padding: 8px;
 }

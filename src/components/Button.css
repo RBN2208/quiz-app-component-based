@@ -1,8 +1,8 @@
 .Button {
   padding: 10px 20px;
-  background: cornflowerblue;
+  background: var(--color-primary);
   color: white;
   border: none;
   border-radius: 8px;
-  box-shadow: 0 4px 8px #0006;
+  box-shadow: 0 4px 8px var(--grey-shadow);
 }
