@@ -7,7 +7,7 @@ console.log('hello world')
 const header = Header('Yes!', 'just some text')
 const button = Button('Click me')
 const button1 = Button('Click this!')
-const card = Card()
+const card = Card('Question?', 'Answer!')
 
 document.body.append(header)
 document.body.append(button)
