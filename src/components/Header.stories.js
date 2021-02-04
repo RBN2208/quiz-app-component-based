@@ -5,4 +5,4 @@ export default {
   component: Header,
 }
 
-export const base = () => Header()
+export const base = () => Header('Quizzy', 'Quizfun! For all!')

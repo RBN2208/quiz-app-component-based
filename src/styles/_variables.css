@@ -1,5 +1,6 @@
 :root {
   --color-primary: cornflowerblue;
+  --color-secondary: rgb(193, 193, 233);
   --grey-shadow: rgb(85, 85, 85);
   --text-white: white;
 }

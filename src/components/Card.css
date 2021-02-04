@@ -1,0 +1,5 @@
+.Card {
+  background-color: var(--color-secondary);
+  padding: 15px;
+  text-align: center;
+}
