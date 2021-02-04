@@ -1,14 +1,7 @@
 # Quiz App
 
-## Template usage
+## This app will be produced mainly in javascript by buildung components
 
-_Don't forget to update the author (and more) in the package.json_
+## Planned featuers
 
-## Installation
-
-```shell
-$ git clone <project-url>
-$ cd quiz-app
-$ npm i # install all dependencies
-$ npm test # run tests
-```
+-
