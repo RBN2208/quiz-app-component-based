@@ -1,13 +1,13 @@
 .header {
   text-align: center;
-  border: 1px solid hotpink;
+  border: 1px solid cornflowerblue;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   overflow: hidden;
 }
 
 .header__title {
-  background-color: hotpink;
+  background-color: cornflowerblue;
   color: white;
   padding-top: 8px;
   margin: 0;
@@ -15,8 +15,8 @@
 
 .header__subtitle {
   display: block;
-  font-size: 75%;
+  font-size: 50%;
   background-color: white;
-  color: hotpink;
+  color: cornflowerblue;
   padding: 8px;
 }

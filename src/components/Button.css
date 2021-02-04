@@ -1,0 +1,8 @@
+.Button {
+  padding: 10px 20px;
+  background: cornflowerblue;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px #0006;
+}
