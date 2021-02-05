@@ -25,7 +25,7 @@
   transition: 0.4s;
 }
 
-.Togglebutton__slider:before {
+.Togglebutton__slider::before {
   position: absolute;
   content: '';
   height: 26px;
@@ -44,6 +44,6 @@ input:focus + .Togglebutton__slider {
   box-shadow: 0 0 1px var(--color-togglein);
 }
 
-input:checked + .Togglebutton__slider:before {
+input:checked + .Togglebutton__slider::before {
   transform: translateX(26px);
 }
