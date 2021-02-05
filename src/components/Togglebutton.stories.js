@@ -1,7 +1,7 @@
 import Togglebutton from './Togglenbutton'
 
 export default {
-  title: 'Togglebutton',
+  title: 'Togglebutton for Darkmode',
   component: Togglebutton,
 }
 
