@@ -4,4 +4,5 @@
   text-align: center;
   box-shadow: 0 0 10px var(--grey-shadow);
   border-radius: 5px;
+  transition: all 0.5s;
 }

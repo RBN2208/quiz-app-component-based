@@ -5,4 +5,5 @@
   border: none;
   border-radius: 3px;
   box-shadow: 0 4px 10px var(--grey-shadow);
+  transition: all 0.5s;
 }
