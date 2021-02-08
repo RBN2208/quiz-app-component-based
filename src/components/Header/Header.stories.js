@@ -5,4 +5,6 @@ export default {
   component: Header,
 }
 
-export const base = () => Header('Quizzy', 'Quizfun! For all!')
+export const base = () =>
+  Header('Wir übergeben an den Header', 'das Headerelement "el"').el
+// der hier übergegebene text wird nur in storybook angezeigt
