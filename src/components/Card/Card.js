@@ -1,6 +1,6 @@
 import './Card.css'
-import createElement from '../lib/createElement'
-import Button from './Button'
+import createElement from '../../lib/createElement'
+import Button from '../Button'
 
 export default function Card(question, answer) {
   // function for card-create

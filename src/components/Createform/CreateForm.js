@@ -1,5 +1,5 @@
 import './CreateForm.css'
-import createElement from '../lib/createElement'
+import createElement from '../../lib/createElement'
 
 export default function CreateForm() {
   const el = createElement('form', {

@@ -1,4 +1,4 @@
-import Togglebutton from './Togglenbutton'
+import Togglebutton from './Togglebutton'
 
 export default {
   title: 'Togglebutton for Darkmode',
