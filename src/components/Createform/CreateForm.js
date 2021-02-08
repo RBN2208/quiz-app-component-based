@@ -6,14 +6,14 @@ export default function CreateForm() {
     className: 'Createform',
     innerHTML: `
         <label>Question:
-        <textarea class="Createform__inputfield" "type="text" placeholder="your question"></textarea>
+        <textarea class="Createform__textfield" "type="text" placeholder="your question"></textarea>
         </label>
         <label>Answer:
-        <textarea class="Createform__inputfield" type="text" placeholder="the answer"></textarea>
+        <textarea class="Createform__textfield" type="text" placeholder="the answer"></textarea>
         <label>Tags:
-        <input class="Createform__inputfield" type="text" placeholder="some tags">
+        <input class="Createform__inputfield" type="text" placeholder="e.g. tag, tag, tag">
         </label>
-        <button class="Createform__inputfield">Create</button>
+        <button class="Createform__button">Create</button>
         `,
   })
   el.addEventListener('submit', event => {

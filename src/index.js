@@ -6,6 +6,8 @@ import Navigation from './components/Navigation'
 import Togglebutton from './components/Togglebutton'
 
 const { el: headerEl, setText: setHeaderText } = Header()
+setHeaderText('Create', 'a new card') // heading and subheading
+// der hier übergebene Text wird nur in Snowflake angezeigt
 
 const navigation = Navigation(onNavigate) //
 
@@ -23,6 +25,5 @@ const grid = createElement(
   Togglebutton(),
   navigation
 )
-setHeaderText('Create', 'a new card') // heading and subheading
-// der hier übergebene Text wird nur in Snowflake angezeigt
+
 document.body.append(grid)
