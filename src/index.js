@@ -9,7 +9,7 @@ const { el: headerEl, setText: setHeaderText } = Header()
 setHeaderText('Create', 'a new card') // heading and subheading
 // der hier übergebene Text wird nur in Snowflake angezeigt
 
-const navigation = Navigation(onNavigate) //
+const navigation = Navigation(onNavigate) // function onNavigate wird als erster parameter in nav gegeben
 
 function onNavigate(text) {
   // loggt den geklickten Button als Text zur Überprüfung aus

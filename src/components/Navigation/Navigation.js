@@ -26,6 +26,13 @@ export default function Navigation(onNavigate) {
     return button // und später die seiten getogglet
   })
 
+  /*
+  const buttons2 = buttonsConfig.map(({ svgPath, text }) => {
+    const button2 = createElement('object', { data: svgPath, alt: text })
+    button2.addEventListener('click', () => onNavigate(text))
+    return button2
+  })
+*/
   const el = createElement('nav', { className: 'Navigation' }, ...buttons) // creates nav and spreads all buttons in nav
   return el
 }
