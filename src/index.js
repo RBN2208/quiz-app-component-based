@@ -9,7 +9,7 @@ import Navigation from './components/Navigation'
 // import Togglebutton from './components/Togglebutton'
 const cards = []
 
-const { el: headerEl } = Header('Quizzy', 'funny questions')
+const header = Header('Quizzy')
 // setHeaderText('Create', 'a new card')
 
 const navigation = Navigation(onNavigate)
@@ -40,7 +40,7 @@ const settingsPage = createElement(
 const grid = createElement(
   'div',
   { className: 'appGrid' },
-  headerEl,
+  header,
   homePage,
   bookPage,
   createPage,
@@ -74,6 +74,7 @@ function onNavigate(text) {
     bookPage.hidden = false
     createPage.hidden = true
     settingsPage.hidden = true
+    header.setText('Booook')
   }
 
   if (text === 'Create') {

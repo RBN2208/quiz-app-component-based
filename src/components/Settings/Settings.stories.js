@@ -5,4 +5,4 @@ export default {
   component: Settings,
 }
 
-export const base = () => Settings('Mike', '25').settings
+export const base = () => Settings('Mike', '25').el

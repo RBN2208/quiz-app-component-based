@@ -20,3 +20,9 @@ input,
 button {
   font-size: 1em;
 }
+
+.appGrid {
+  display: grid;
+  grid-template-rows: 55px auto 50px;
+  height: 100vh;
+}
