@@ -1,29 +1,23 @@
 // import Button from './components/Button'
-import Header from './components/Header'
-import Card from './components/Card'
-import Bookmark from './components/Bookmark'
-import CreateForm from './components/CreateForm'
-import Settings from './components/Settings'
-import createElement from './lib/createElement'
-import Navigation from './components/Navigation'
 // import Togglebutton from './components/Togglebutton'
+// import Card from './components/Card'
+import createElement from './lib/createElement'
+import CreateForm from './components/CreateForm'
+import Header from './components/Header'
+import Homepage from './components/HomePage'
+import Bookmark from './components/Bookmark'
+import Settings from './components/Settings'
+import Navigation from './components/Navigation'
+
 const cards = []
 
 const header = Header('Quizzy')
-// setHeaderText('Create', 'a new card')
 
 const navigation = Navigation(onNavigate)
+
 const form = CreateForm(onSubmit)
-const { el: settingsEl } = Settings('Peter Pan', '50')
 
-const homePage = createElement('main', { className: 'HomePage', hidden: false })
-
-const bookPage = createElement(
-  'main',
-  { className: 'BookPage', hidden: true },
-  Bookmark('This is', 'bookmarked one'),
-  Bookmark('This is', 'bookmarked two')
-)
+const homePage = Homepage()
 
 const createPage = createElement(
   'main',
@@ -31,10 +25,18 @@ const createPage = createElement(
   form
 )
 
+const settings = Settings('Peter Pan', '50')
+
+const bookPage = createElement(
+  'main',
+  { className: 'BookPage', hidden: true },
+  Bookmark('This is', 'bookmarked one'),
+  Bookmark('This is', 'bookmarked two')
+)
 const settingsPage = createElement(
   'main',
   { className: 'settingsPage', hidden: true },
-  settingsEl
+  settings
 )
 
 const grid = createElement(
@@ -50,45 +52,40 @@ const grid = createElement(
 
 function onSubmit(question, answer) {
   cards.push({ question, answer })
-  renderCards()
-}
-
-function renderCards() {
-  const cardElements = cards.map(({ question, answer }) =>
-    Card(question, answer)
-  )
-  homePage.innerHTML = ''
-  homePage.append(...cardElements)
+  homePage.setCards(cards)
 }
 
 function onNavigate(text) {
   if (text === 'Home') {
-    homePage.hidden = false
+    homePage.show()
     bookPage.hidden = true
     createPage.hidden = true
     settingsPage.hidden = true
+    header.setText('Quizzy')
   }
 
   if (text === 'Bookmarks') {
-    homePage.hidden = true
+    homePage.hide()
     bookPage.hidden = false
     createPage.hidden = true
     settingsPage.hidden = true
-    header.setText('Booook')
+    header.setText('Bookmarks')
   }
 
   if (text === 'Create') {
-    homePage.hidden = true
+    homePage.hide()
     bookPage.hidden = true
     createPage.hidden = false
     settingsPage.hidden = true
+    header.setText('Create')
   }
 
   if (text === 'Settings') {
-    homePage.hidden = true
+    homePage.hide()
     bookPage.hidden = true
     createPage.hidden = true
     settingsPage.hidden = false
+    header.setText('Settings')
   }
 }
 document.body.append(grid)
