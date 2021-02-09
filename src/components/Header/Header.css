@@ -1,9 +1,7 @@
 .Header {
   text-align: center;
-  border: 1px solid var(--color-primary);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  overflow: hidden;
+  box-shadow: 0 4px 10px var(--grey-shadow);
+  z-index: 1;
 }
 
 .Header__title {
@@ -12,12 +10,4 @@
   padding-top: 8px;
   margin: 0;
   transition: all 0.5s;
-}
-
-.Header__subtitle {
-  display: block;
-  font-size: 50%;
-  background-color: var(--text-white);
-  color: var(--color-primary);
-  padding: 8px;
 }

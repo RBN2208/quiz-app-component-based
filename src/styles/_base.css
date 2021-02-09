@@ -21,6 +21,10 @@ button {
   font-size: 1em;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 .appGrid {
   display: grid;
   grid-template-rows: 55px auto 50px;
