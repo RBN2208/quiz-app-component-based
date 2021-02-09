@@ -1,24 +1,10 @@
 import createElement from '../../lib/createElement'
-
-import Card from '../Card'
+import CreateForm from '../CreateForm'
 import './Createpage.css'
 
-/*
-'main',
-{ className: 'CreatePage', hidden: true },
-form
-)
-*/
-export default function Createpage() {
-  const el = createElement('main', { className: 'Createpage', hidden: true })
-
-  function setCards(cards) {
-    const cardElements = cards.map(({ question, answer }) =>
-      Card(question, answer)
-    )
-    el.innerHTML = ''
-    el.append(...cardElements)
-  }
+export default function Createpage(onSubmit, hidden) {
+  const form = CreateForm(onSubmit)
+  const el = createElement('main', { className: 'Createpage', hidden }, form)
 
   function show() {
     el.hidden = false
@@ -29,7 +15,6 @@ export default function Createpage() {
 
   return {
     el,
-    setCards,
     show,
     hide,
   }
