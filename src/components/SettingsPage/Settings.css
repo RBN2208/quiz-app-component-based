@@ -1,0 +1,22 @@
+.Settings {
+  display: grid;
+  padding: 20px;
+  gap: 15px;
+  grid-auto-rows: min-content;
+}
+
+.Settings__profile {
+  box-shadow: 0 0 10px var(--grey-shadow);
+  height: min-content;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.Settings__darkmodecontainer {
+  box-shadow: 0 0 10px var(--grey-shadow);
+  height: min-content;
+  width: min-content;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
