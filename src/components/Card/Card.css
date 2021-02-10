@@ -1,7 +1,6 @@
 .Card {
   background-color: var(--color-secondary);
   padding: 15px 25px;
-  height: max-content;
   text-align: center;
   box-shadow: 0 0 10px var(--grey-shadow);
   border-radius: 5px;

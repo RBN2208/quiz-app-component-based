@@ -15,7 +15,7 @@ export default function Bookmark(question, answer) {
   // create ( type, props, ...children)
   const el = createElement(
     'section', // type
-    { className: 'Card' }, // props
+    { className: 'Card-B' }, // props
     questionEl, // ...children
     buttonEl, // ...children
     answerEl // ...children
