@@ -3,8 +3,9 @@ import CreateForm from '../CreateForm'
 import './Createpage.css'
 
 export default function Createpage(onSubmit, hidden) {
+  const el = createElement('main', { className: 'Createpage', hidden })
   const form = CreateForm(onSubmit)
-  const el = createElement('main', { className: 'Createpage', hidden }, form)
+  el.append(form)
 
   function show() {
     el.hidden = false

@@ -1,5 +1,6 @@
 .Homepage {
   display: grid;
+  grid-auto-rows: max-content;
   gap: 20px;
   overflow-y: scroll;
   padding: 20px;
